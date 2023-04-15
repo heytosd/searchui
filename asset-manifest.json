@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/searchui/static/css/main.abaa29be.css",
-    "main.js": "/searchui/static/js/main.2665af75.js",
+    "main.js": "/searchui/static/js/main.a41674ae.js",
     "static/js/27.23ec41a4.chunk.js": "/searchui/static/js/27.23ec41a4.chunk.js",
     "index.html": "/searchui/index.html"
   },
   "entrypoints": [
     "static/css/main.abaa29be.css",
-    "static/js/main.2665af75.js"
+    "static/js/main.a41674ae.js"
   ]
 }
