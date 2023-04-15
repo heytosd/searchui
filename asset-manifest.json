@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/hfnsearchui/static/css/main.abaa29be.css",
+    "main.js": "/hfnsearchui/static/js/main.253ea2cd.js",
+    "static/js/27.23ec41a4.chunk.js": "/hfnsearchui/static/js/27.23ec41a4.chunk.js",
+    "index.html": "/hfnsearchui/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.abaa29be.css",
+    "static/js/main.253ea2cd.js"
+  ]
+}
