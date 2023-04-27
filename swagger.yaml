@@ -1,0 +1,41 @@
+openapi: "3.0.1"
+info:
+  title: "Sample Proof of Concept with Dev Portal"
+  description: "This is an example of API Dev portal."
+  version: "1.0.0"
+servers:
+- url: "https://1bpvqxwozb.execute-api.us-east-1.amazonaws.com"
+
+paths:
+  /apply:
+    get:
+      responses:
+        default:
+          description: "Default response for GET /apply"
+        
+  /example:
+    get:
+      responses:
+        '200':
+          description: OK
+components:
+  securitySchemes:
+    bearerAuth: 
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+    poc:
+      type: "oauth2"
+      flows: {}
+      x-amazon-apigateway-authorizer:
+        identitySource: "$request.header.Authorization"
+        jwtConfiguration:
+          audience:
+          - "poc"
+          issuer: "https://dev-z4thynwcb1c55fjd.us.auth0.com/"
+        type: "jwt"
+x-amazon-apigateway-importexport-version: "1.0"
+
+security:
+  - bearerAuth: []
