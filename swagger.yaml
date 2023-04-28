@@ -2,13 +2,19 @@ openapi: "3.0.1"
 info:
   title: "Sample Proof of Concept with Dev Portal"
   description: "This is an example of API Dev portal."
-  version: "1.0.0"
+  version: 1.0.1
 servers:
 - url: "https://1bpvqxwozb.execute-api.us-east-1.amazonaws.com"
 
 paths:
   /apply:
     get:
+      parameters: 
+        - in: header
+          name: Access-Control-Allow-Origin
+          description: access control
+          type: string
+          default: '*'
       responses:
         default:
           description: "Default response for GET /apply"
