@@ -9,12 +9,12 @@ servers:
 paths:
   /apply:
     get:
-      parameters: 
-        - in: header
-          name: access-control-allow-origin
-          description: access control
-          type: string
-          default: '*'
+#       parameters: 
+#         - in: header
+#           name: access-control-allow-origin
+#           description: access control
+#           type: string
+#           default: '*'
       responses:
         default:
           description: "Default response for GET /apply"
