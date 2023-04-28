@@ -11,7 +11,7 @@ paths:
     get:
       parameters: 
         - in: header
-          name: Access-Control-Allow-Origin
+          name: access-control-allow-origin
           description: access control
           type: string
           default: '*'
